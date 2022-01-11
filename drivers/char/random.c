@@ -1845,7 +1845,6 @@ random_poll(struct file *file, poll_table * wait)
 		mask |= EPOLLOUT | EPOLLWRNORM;
 	return mask;
 }
-#endif
 
 static int
 write_pool(struct entropy_store *r, const char __user *buffer, size_t count)
