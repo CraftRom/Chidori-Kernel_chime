@@ -91,7 +91,6 @@
 #define LAST_CPUPID_WIDTH 0
 #endif
 
-<<<<<<< HEAD
 #ifdef CONFIG_KASAN_SW_TAGS
 #define KASAN_TAG_WIDTH 8
 #if SECTIONS_WIDTH+ZONES_WIDTH+NODES_WIDTH+LRU_GEN_WIDTH+LRU_REFS_WIDTH+ \
@@ -100,11 +99,10 @@
 #endif
 #else
 #define KASAN_TAG_WIDTH 0
-=======
+
 #if SECTIONS_WIDTH+NODES_WIDTH+ZONES_WIDTH+LAST_CPUPID_WIDTH+KASAN_TAG_WIDTH \
 	> BITS_PER_LONG - NR_PAGEFLAGS
 #error "Not enough bits in page flags"
->>>>>>> 1927de3b76d8... Merge commit of `android-4.19-stable` [1/2]
 #endif
 
 /*
